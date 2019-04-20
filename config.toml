@@ -1,0 +1,41 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Bosque Programming Language"
+themesDir = "themes"
+theme = "hugo-whisper-theme"
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+# [[menu.main]]
+#     name = "Docs"
+#     url = "/docs/"
+#     weight = 2
+
+[params]
+  google_analytics_id=""
+  homepage_button_link = '/docs'
+  homepage_button_text = 'Read The Docs'
+  homepage_intro = 'The Bosque programming language is a Microsoft Research project that is investigating language designs for writing code that is simple, obvious, and easy to reason about for both humans and machines.'
+  # homepage_image = '/images/front-home-image.png'
+
+  [params.homepage_meta_tags]
+    meta_description = "The Bosque programming language is an experiment in regularized design for a machine assisted rapid and reliable software development lifecycle."
+    meta_og_title = "Hugo Whisper Theme"
+    meta_og_type = "website"
+    meta_og_url = "https://hugo-whisper.netlify.com"
+    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
+    meta_og_description = "The Bosque programming language is an experiment in regularized design for a machine assisted rapid and reliable software development lifecycle."
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@kernelid"
+    meta_twitter_creator = "@kernelid"
+
+  [params.logo]
+      mobile = "/images/bosque-lang-logo.png"
+      standard  = "/images/bosque-lang-logo.png"
