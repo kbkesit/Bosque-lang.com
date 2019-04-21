@@ -13,10 +13,10 @@ pygmentsUseClasses = true
     url = "/"
     weight = 1
 
-# [[menu.main]]
-#     name = "Docs"
-#     url = "/docs/"
-#     weight = 2
+[[menu.main]]
+    name = "Docs"
+    url = "/docs/"
+    weight = 2
 
 [params]
   google_analytics_id=""

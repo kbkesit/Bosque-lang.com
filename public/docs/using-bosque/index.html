@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Overview - Bosque Programming Language</title>
+  <title>Using Bosque - Bosque Programming Language</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="/favicon.png">
@@ -18,7 +18,7 @@
 
 </head>
 
-<body class='page page-default-list'>
+<body class='page page-default-single'>
   <div id="main-menu-mobile" class="main-menu-mobile">
   <ul>
     
@@ -29,7 +29,7 @@
       </a>
     </li>
     
-    <li class="menu-item-docs active">
+    <li class="menu-item-docs">
       <a href="/docs/">
         <span>Docs</span>
       </a>
@@ -56,7 +56,7 @@
       </a>
     </li>
     
-    <li class="menu-item-docs active">
+    <li class="menu-item-docs">
       <a href="/docs/">
         <span>Docs</span>
       </a>
@@ -90,7 +90,7 @@
   <h4>Docs</h4>
   <ul>
     
-    <li class="">
+    <li class="active ">
       <a href="/docs/using-bosque/">Using Bosque</a>
     </li>
     
@@ -101,26 +101,38 @@
         </div>
         <div class="col-12 col-md-9">
           
-
-<span class="overview">Overview</span>
-<h1 class="title">Overview</h1>
+<h1 class="title">Using Bosque</h1>
 <div class="content">
   
 
-<h2 id="bosque-programming-language">Bosque Programming Language</h2>
+<p>The current concentrate of the Bosque language is core design. Because of this there is limited support for development/compilation as well as no support for packaging, deployment, lifecycle management, etc.</p>
 
-<p>The Bosque programming language is designed for writing code that is simple, obvious, and easy to reason about for both humans and machines. The key design features of the language provide ways to avoid accidental complexity in the development and coding process. The goal is improved developer productivity, increased software quality, and enabling a range of new compilers and developer tooling experiences.</p>
+<h2 id="requirements">Requirements</h2>
+
+<h3 id="windows">Windows</h3>
+
+<p>In order to build the language for Windows the following are needed:</p>
+
+<ul>
+<li><p>The LTS version of node.js for Windows (x64)</p></li>
+
+<li><p>Typescript (install with: <code>npm i typescript -g</code>)</p></li>
+</ul>
+
+<h3 id="build-test">Build &amp; Test</h3>
+
+<p>The <code>ref_impl</code> directory contains the reference implementation parser, type checker, interpreter, and command line runner. In this directory, build and test the Bosque reference implementation with:</p>
+<div class="highlight"><pre class="chroma">npm install &amp;&amp; npm run-script build &amp;&amp; npm test</pre></div>
+<h3 id="command-line-execution">Command Line Execution</h3>
+
+<p>The <code>ref_impl</code> directory contains a simple command line runner for standalone Bosque (<code>.bsq</code>) files. These files must have a single <code>entrypoint</code> function called <code>main()</code>. The code in the file can be parsed, type checked, and executed with:</p>
+<div class="highlight"><pre class="chroma">node bin/test/app_runner.js FILE.bsq</pre></div>
+<h3 id="visual-studio-code-integration">Visual Studio Code Integration</h3>
+
+<p>This repository provides basic Visual Studio Code IDE support for the Bosque language (currently limited to syntax and brace highlighting). The installation requires manually copying the full <code>bosque-language-tools/</code> folder into your user <code>.vscode/extensions/</code> directory and restarting VSCode.</p>
 
 </div>
-
-
-<div class="summary mb-2">
-  
-  <h2 class="title-summary"><a href="/docs/using-bosque/">Using Bosque</a></h2>
-  <p> The current concentrate of the Bosque language is core design. Because of this there is limited support for development/compilation as well …</p>
 </div>
-
-
 
         </div>
       </div>
